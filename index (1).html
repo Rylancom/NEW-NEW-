@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Financial Planner</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <script defer src="chatbot.js"></script>
+</head>
+<body>
+  <header>
+    <h1 class="animate-header">💸 Your AI Financial Planner 💸</h1>
+  </header>
+
+  <section id="budget-form" class="fade-in">
+    <h2>📊 Plan Your Budget</h2>
+    <form id="financeForm">
+      <input type="number" id="income" placeholder="Enter your monthly income" required>
+      <input type="number" id="expenses" placeholder="Enter your monthly expenses" required>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="result" class="result-output"></div>
+    <div class="money-animation">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Dollar_note.svg" class="dollar" alt="Money">
+    </div>
+  </section>
+
+  <section id="chatbot" class="slide-in">
+    <h2>🤖 Ask Financial Questions</h2>
+    <div id="chatbox">
+      <div id="messages"></div>
+      <input type="text" id="userInput" placeholder="Type your question...">
+      <button id="sendBtn">Send</button>
+    </div>
+  </section>
+</body>
+</html>
